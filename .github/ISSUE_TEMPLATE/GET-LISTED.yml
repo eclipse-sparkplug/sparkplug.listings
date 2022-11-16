@@ -57,7 +57,7 @@ body:
   - type: textarea
     id: environment-details
     attributes:
-      label: Summary of the environment used for certification: devices, software components, operating systems, cloud services, etc
+      label: Summary of the environment used for certification - devices, software components, operating systems, cloud services, etc
     validations:
       required: true
   - type: checkboxes
