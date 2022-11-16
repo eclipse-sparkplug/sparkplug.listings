@@ -16,7 +16,7 @@ body:
   - type: textarea
     id: product-name
     attributes:
-      label: Product Name, Version, and download/product information URL
+      label: Product Name, Version, and Download/Product Information URL
     validations:
       required: true
   - type: textarea
@@ -28,7 +28,7 @@ body:
   - type: textarea
     id: specification-version
     attributes:
-      label: Specification Version and download URL
+      label: Specification Version Used and download URL
     validations:
       required: true
   - type: dropdown
@@ -45,7 +45,7 @@ body:
   - type: textarea
     id: tck-version
     attributes:
-      label: TCK Version Used, digital SHA-256 fingerprint, and download URL
+      label: TCK Version Used, digital SHA-256 Fingerprint, and Download URL
     validations:
       required: true
   - type: textarea
@@ -57,14 +57,14 @@ body:
   - type: textarea
     id: environment-details
     attributes:
-      label: Summary of the environment used for certification - devices, software components, operating systems, cloud services, etc
+      label: Summary of the Environment Used for Certification - Devices, Software Components, Operating Systems, Cloud Services, etc
     validations:
       required: true
   - type: checkboxes
     id: terms-eftl
     attributes:
       label: Accept EFTL Terms
-      description: By checking this box I acknowledge that the Organization I represent accepts the terms of the [EFTL](https://www.eclipse.org/legal/tck.php).
+      description: By checking this box I acknowledge that the organization I represent accepts the terms of the [EFTL] (https://www.eclipse.org/legal/tck.php).
       options:
         - label: I agree to the terms of EFTL
           required: true
