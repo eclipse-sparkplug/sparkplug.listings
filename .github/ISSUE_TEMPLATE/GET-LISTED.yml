@@ -1,0 +1,17 @@
+name: Get Listed Request
+description: Request a new listing of 
+title: "[GetListed]: "
+labels: ["getlisted", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a new listing request!
+  - type: textarea
+    id: organization-name
+    attributes:
+      label: Organization Name and Organization URL?
+      value: "My Org Inc - https://my_organization_url.com"
+    validations:
+      required: true
+
