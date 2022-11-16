@@ -1,6 +1,6 @@
 name: Get Listed Request
-description: Request a new listing of 
-title: "[GetListed]: "
+description: Request a new listing of a Sparkplug compatible implementation
+title: "Get Listed Request: [ADD DETAILS HERE]"
 labels: ["getlisted", "triage"]
 body:
   - type: markdown
@@ -10,8 +10,69 @@ body:
   - type: textarea
     id: organization-name
     attributes:
-      label: Organization Name and Organization URL?
-      value: "My Org Inc - https://my_organization_url.com"
+      label: Organization Name and Organization URL
     validations:
       required: true
-
+  - type: textarea
+    id: product-name
+    attributes:
+      label: Product Name, Version, and download/product information URL
+    validations:
+      required: true
+  - type: textarea
+    id: product-logo-url
+    attributes:
+      label: Product Logo URL
+    validations:
+      required: true
+  - type: textarea
+    id: specification-version
+    attributes:
+      label: Specification Version and download URL
+    validations:
+      required: true
+  - type: dropdown
+    id: conformance-profile
+    attributes:
+      label: Sparkplug Conformance Profile(s) covered by this product
+      options:
+        - Sparkplug Edge Node
+        - Sparkplug Host Application
+        - Sparkplug Compliant MQTT Server
+        - Sparkplug Aware MQTT Server
+    validations:
+      required: true
+  - type: textarea
+    id: tck-version
+    attributes:
+      label: TCK Version Used, digital SHA-256 fingerprint, and download URL
+    validations:
+      required: true
+  - type: textarea
+    id: tck-results
+    attributes:
+      label: Public URL of TCK Results Summary
+    validations:
+      required: true
+  - type: textarea
+    id: environment-details
+    attributes:
+      label: Summary of the environment used for certification: devices, software components, operating systems, cloud services, etc
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms-eftl
+    attributes:
+      label: Accept EFTL Terms
+      description: By checking this box I acknowledge that the Organization I represent accepts the terms of the [EFTL](https://www.eclipse.org/legal/tck.php).
+      options:
+        - label: I agree to the terms of EFTL
+          required: true
+  - type: checkboxes
+    id: terms-tck
+    attributes:
+      label: All TCK Requirements are met
+      description: By checking this box I attest that all TCK requirements have been met, including any compatibility rules.
+      options:
+        - label: I attest that all TCK requirements have been met
+          required: true
